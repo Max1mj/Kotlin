@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/titleEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title" />
+
+        <EditText
+            android:id="@+id/authorEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Author"
+            android:layout_below="@id/titleEdit"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/ratingEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rating"
+            android:layout_below="@id/authorEdit"
+            android:layout_marginTop="8dp"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/addBookButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Book"
+            android:layout_below="@id/ratingEdit"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/allBooksButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show All Books"
+            android:layout_below="@id/addBookButton"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/idEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book ID"
+            android:layout_below="@id/allBooksButton"
+            android:layout_marginTop="8dp"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Book"
+            android:layout_below="@id/idEdit"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deleteButton"
+            android:layout_marginTop="83dp"
+            android:text="" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
